@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramokhele Manyeli - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="portfolio-container">
+        <!-- Matrix-style background -->
+        <div class="background-dots"></div>
+
+        <!-- Terminal Header -->
+        <nav class="terminal-header">
+            <div class="nav-content">
+                <div class="nav-left">
+                    <div class="window-controls">
+                        <div class="control red"></div>
+                        <div class="control yellow"></div>
+                        <div class="control green"></div>
+                    </div>
+                    <svg class="terminal-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="4,17 10,11 4,5"></polyline>
+                        <line x1="12" y1="19" x2="20" y2="19"></line>
+                    </svg>
+                    <span>PORTFOLIO_v2.1.0</span>
+                </div>
+                <div class="nav-right">
+                    <span id="current-time"></span> | SYSTEM_ONLINE
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Command Line -->
+            <div class="command-section">
+                <div class="command-line">
+                    <span id="typed-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <div class="user-info">
+                    <div>USER: Ramokhele Manyeli</div>
+                    <div>ROLE: Full-Stack Developer | Data Engineer</div>
+                    <div>STATUS: Available for opportunities</div>
+                    <div>LOCATION: South Africa</div>
+                </div>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <div class="tab-navigation">
+                <button class="tab-btn active" data-tab="overview">[overview]</button>
+                <button class="tab-btn" data-tab="projects">[projects]</button>
+                <button class="tab-btn" data-tab="skills">[skills]</button>
+                <button class="tab-btn" data-tab="analytics">[analytics]</button>
+                <button class="tab-btn" data-tab="contact">[contact]</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div id="overview" class="tab-content active">
+                <!-- Hero Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <svg class="stat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16,18 22,12 16,6"></polyline>
+                            <polyline points="8,6 2,12 8,18"></polyline>
+                        </svg>
+                        <div class="stat-number" id="lines-of-code">0</div>
+                        <div class="stat-label">LINES_OF_CODE</div>
+                    </div>
+                    <div class="stat-card">
+                        <svg class="stat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                        <div class="stat-number" id="projects-completed">0</div>
+                        <div class="stat-label">PROJECTS_DEPLOYED</div>
+                    </div>
+                    <div class="stat-card">
+                        <svg class="stat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                        </svg>
+                        <div class="stat-number" id="coffee-consumed">0</div>
+                        <div class="stat-label">COFFEE_CONSUMED</div>
+                    </div>
+                    <div class="stat-card">
+                        <svg class="stat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        </svg>
+                        <div class="stat-number" id="hours-coding">0</div>
+                        <div class="stat-label">HOURS_CODING</div>
+                    </div>
+                </div>
+
+                <!-- Profile Section -->
+                <div class="profile-section">
+                    <div class="profile-left">
+                        <div class="profile-card">
+                            <h3 class="card-title">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                                </svg>
+                                SYSTEM_PROFILE.exe
+                            </h3>
+                            <div class="profile-content">
+                                <div class="profile-summary">
+                                    <div>&gt; BCom Informatics Student with passion for data-driven solutions</div>
+                                    <div>&gt; Specializing in C# web development and data engineering</div>
+                                    <div>&gt; Building scalable applications with modern architectures</div>
+                                    <div>&gt; Transforming complex data into actionable insights</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="metrics-card">
+                            <h3 class="card-title">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="23,6 13.5,15.5 8.5,10.5 1,18"></polyline>
+                                    <polyline points="17,6 23,6 23,12"></polyline>
+                                </svg>
+                                PERFORMANCE_METRICS.log
+                            </h3>
+                            <div class="metrics-grid">
+                                <div class="metric">
+                                    <div class="metric-value">98.7%</div>
+                                    <div class="metric-label">CODE_QUALITY</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">24/7</div>
+                                    <div class="metric-label">AVAILABILITY</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">&lt;2ms&gt;</div>
+                                    <div class="metric-label">RESPONSE_TIME</div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-value">100%</div>
+                                    <div class="metric-label">COMMITMENT</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-right">
+                        <div class="avatar-card">
+                            <div class="avatar-container">
+                                <div class="avatar-border-outer"></div>
+                                <div class="avatar-border-inner"></div>
+                                <img src="assets/profile.jpg" alt="Ramokhele Manyeli" class="avatar-image">
+                                <div class="status-indicator"></div>
+                            </div>
+                            <div class="status-text">STATUS: ONLINE</div>
+                            <div class="username">RAMOKHELE_MANYELI.dev</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Tab -->
+            <div id="projects" class="tab-content">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                        <path d="m3 5 0 14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path>
+                        <path d="m3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"></path>
+                    </svg>
+                    PROJECT_DATABASE.sql
+                </h2>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-info">
+                                <span class="project-id">#001</span>
+                                <h3 class="project-name">DataFlow Analytics</h3>
+                                <span class="project-status deployed">DEPLOYED</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="action-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    CODE
+                                </button>
+                                <button class="action-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m7 7 10 10-5 5-10-10Z"></path>
+                                        <path d="m13 2 3 3L8 13l-3-3Z"></path>
+                                        <path d="m22 6-3-3"></path>
+                                    </svg>
+                                    DEPLOY
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <div class="stat-label">UPTIME</div>
+                                <div class="stat-value">99.8%</div>
+                            </div>
+                            <div class="project-stat">
+                                <div class="stat-label">USERS</div>
+                                <div class="stat-value">1.2K</div>
+                            </div>
+                            <div class="project-stat">
+                                <div class="stat-label">COMMITS</div>
+                                <div class="stat-value">247</div>
+                            </div>
+                            <div class="project-stat">
+                                <div class="stat-label">STACK</div>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">C#</span>
+                                    <span class="tech-tag">ASP.NET</span>
+                                    <span class="tech-tag">SQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-info">
+                                <span class="project-id">#002</span>
+                                <h3 class="project-name">TaskSync API</h3>
+                                <span class="project-status beta">BETA</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="action-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    CODE
+                                </button>
+                                <button class="action-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m7 7 10 10-5 5-10-10Z"></path>
+                                        <path d="m13 2 3 3L8 13l-3-3Z"></path>
+                                        <path d="m22 6-3-3"></path>
+                                    </svg>
+                                    DEPLOY
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <div class="stat-label">UPTIME</div>
+                                <div class="stat-value">97.3%</div>
+                            </div>
+                            <div class="project-stat">
+                                <div class="stat-label">USERS</div>
+                                <div class="stat-value">340</div>
+                            </div>
+                            <div class="project-stat">
+                                <div class="stat-label">COMMITS</div>
+                                <div class="stat-value">156</div>
+                            </div>
+                            <div class="project-stat">
+                                <div class="stat-label">STACK</div>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Web API</span>
+                                    <span class="tech-tag">SignalR</span>
+                                    <span class="tech-tag">Redis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-info">
+                                <span class="project-id">#003</span>
+                                <h3 class="project-name">ReportGen Engine</h3>
+                                <span class="project-status development">DEVELOPMENT</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="action-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    CODE
+                                </button>
+                                <button class="action-btn">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="m7 7 10 10-5 5-10-10Z"></path>
+                                        <path d="m13 2 3 3L8 13l-3-3Z"></path>
+                                        <path d="m22 6-3-3"></path>
+                                    </svg>
+                                    DEPLOY
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <div class="stat-label">UPTIME</div>
+                                <div class="stat-value">N/A</div>
+                            </div>
+                            <div class="project-stat">
+                                <div class="stat-label">USERS</div>
+                                <div class="stat-value">0</div>
+                            </div>
+                            <div class="project-stat">
+                                <div class="stat-label">COMMITS</div>
+                                <div class="stat-value">89</div>
+                            </div>
+                            <div class="project-stat">
+                                <div class="stat-label">STACK</div>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">FastAPI</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Tab -->
+            <div id="skills" class="tab-content">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="12" y1="20" x2="12" y2="10"></line>
+                        <line x1="18" y1="20" x2="18" y2="4"></line>
+                        <line x1="6" y1="20" x2="6" y2="16"></line>
+                    </svg>
+                    SKILL_ANALYSIS.json
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">C#</span>
+                            <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%; background: linear-gradient(to right, #22d3ee, #3b82f6);"></div>
+                        </div>
+                        <div class="skill-level">PROFICIENCY_LEVEL: EXPERT</div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">ASP.NET</span>
+                            <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%; background: linear-gradient(to right, #3b82f6, #8b5cf6);"></div>
+                        </div>
+                        <div class="skill-level">PROFICIENCY_LEVEL: ADVANCED</div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%; background: linear-gradient(to right, #8b5cf6, #ec4899);"></div>
+                        </div>
+                        <div class="skill-level">PROFICIENCY_LEVEL: ADVANCED</div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percentage">78%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 78%; background: linear-gradient(to right, #ec4899, #ef4444);"></div>
+                        </div>
+                        <div class="skill-level">PROFICIENCY_LEVEL: ADVANCED</div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-percentage">72%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 72%; background: linear-gradient(to right, #ef4444, #f97316);"></div>
+                        </div>
+                        <div class="skill-level">PROFICIENCY_LEVEL: INTERMEDIATE</div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">React</span>
+                            <span class="skill-percentage">68%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 68%; background: linear-gradient(to right, #f97316, #eab308);"></div>
+                        </div>
+                        <div class="skill-level">PROFICIENCY_LEVEL: INTERMEDIATE</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytics Tab -->
+            <div id="analytics" class="tab-content">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                    </svg>
+                    SYSTEM_ANALYTICS.dashboard
+                </h2>
+                <div class="analytics-grid">
+                    <div class="analytics-card">
+                        <h3>COMMIT_FREQUENCY</h3>
+                        <div class="commit-chart">
+                            <div class="commit-day">
+                                <span class="day-label">Mon</span>
+                                <div class="commit-bar">
+                                    <div class="commit-progress" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="commit-day">
+                                <span class="day-label">Tue</span>
+                                <div class="commit-bar">
+                                    <div class="commit-progress" style="width: 92%;"></div>
+                                </div>
+                            </div>
+                            <div class="commit-day">
+                                <span class="day-label">Wed</span>
+                                <div class="commit-bar">
+                                    <div class="commit-progress" style="width: 78%;"></div>
+                                </div>
+                            </div>
+                            <div class="commit-day">
+                                <span class="day-label">Thu</span>
+                                <div class="commit-bar">
+                                    <div class="commit-progress" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="commit-day">
+                                <span class="day-label">Fri</span>
+                                <div class="commit-bar">
+                                    <div class="commit-progress" style="width: 88%;"></div>
+                                </div>
+                            </div>
+                            <div class="commit-day">
+                                <span class="day-label">Sat</span>
+                                <div class="commit-bar">
+                                    <div class="commit-progress" style="width: 45%;"></div>
+                                </div>
+                            </div>
+                            <div class="commit-day">
+                                <span class="day-label">Sun</span>
+                                <div class="commit-bar">
+                                    <div class="commit-progress" style="width: 32%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="analytics-card">
+                        <h3>LANGUAGE_DISTRIBUTION</h3>
+                        <div class="language-chart">
+                            <div class="language-item">
+                                <span class="language-name">C#</span>
+                                <div class="language-bar">
+                                    <div class="language-progress" style="width: 45%;"></div>
+                                </div>
+                                <span class="language-percent">45%</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name">SQL</span>
+                                <div class="language-bar">
+                                    <div class="language-progress" style="width: 25%;"></div>
+                                </div>
+                                <span class="language-percent">25%</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name">JavaScript</span>
+                                <div class="language-bar">
+                                    <div class="language-progress" style="width: 20%;"></div>
+                                </div>
+                                <span class="language-percent">20%</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name">Python</span>
+                                <div class="language-bar">
+                                    <div class="language-progress" style="width: 10%;"></div>
+                                </div>
+                                <span class="language-percent">10%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Tab -->
+            <div id="contact" class="tab-content">
+                <h2 class="section-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="m22 21-3-3m0 0a5.5 5.5 0 1 0-7.78-7.78 5.5 5.5 0 0 0 7.78 7.78Z"></path>
+                    </svg>
+                    CONTACT_INTERFACE.connect
+                </h2>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>COMMUNICATION_CHANNELS</h3>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <div>
+                                    <div class="method-title">EMAIL_PROTOCOL</div>
+                                    <div class="method-value">manyeliramokhele23@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                <div>
+                                    <div class="method-title">GITHUB_REPOSITORY</div>
+                                    <div class="method-value">github.com/ramo-23</div>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect width="4" height="12" x="2" y="9"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                                <div>
+                                    <div class="method-title">LINKEDIN_NETWORK</div>
+                                    <div class="method-value">https://www.linkedin.com/in/ramokhele-manyeli-98b37b265/</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>DOWNLOAD_RESOURCES</h3>
+                        <div class="download-buttons">
+                            <button class="download-btn" onclick="window.open('assets/Ramokhele_Manyeli_CV.pdf', '_blank')">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7,10 12,15 17,10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                DOWNLOAD_CV.pdf
+                            </button>
+                            <button class="download-btn">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="6" y1="3" x2="6" y2="15"></line>
+                                    <circle cx="18" cy="6" r="3"></circle>
+                                    <circle cx="6" cy="18" r="3"></circle>
+                                    <path d="m18 9a9 9 0 0 1-9 9"></path>
+                                </svg>
+                                VIEW_PORTFOLIO.git
+                            </button>
+                        </div>
+
+                        <div class="availability-status">
+                            <div class="status-title">AVAILABILITY_STATUS:</div>
+                            <div class="status-item"><span>&gt;</span> Open to new opportunities</div>
+                            <div class="status-item"><span>&gt;</span> Available for freelance projects</div>
+                            <div class="status-item"><span>&gt;</span> Remote work preferred</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">© 2024 RAMOKHELE_MANYELI.dev | All systems operational</div>
+                <div class="footer-right">UPTIME: 99.9% | LAST_UPDATED: <span id="last-updated"></span></div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/portfolio-website/src/scripts/app.js"></script>
+</body>
+</html>
