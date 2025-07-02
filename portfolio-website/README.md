@@ -1,6 +1,6 @@
 # Portfolio Website
 
-A warm welcome to my portfolio showcasing projects, skills, analytics, and contact information.
+A warm welcome to my portfolio showcasing my projects, skills, analytics, and contact information.
 
 ## Project Structure
 

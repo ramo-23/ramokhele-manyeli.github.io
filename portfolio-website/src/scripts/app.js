@@ -49,15 +49,14 @@ function startClock() {
 // Animated counters
 function animateStats() {
     const targets = {
-        'lines-of-code': 15420,
-        'projects-completed': 12,
-        'coffee-consumed': 847,
-        'hours-coding': 2340
+        'lines-of-code': 4200,
+        'projects-completed': 3,
+        'coffee-consumed': 80,
+        'hours-coding': 1000
     };
 
     const duration = 2000;
     const steps = 60;
-    const increment = duration / steps;
 
     // Wait for typing animation to complete
     setTimeout(() => {
@@ -325,17 +324,3 @@ document.addEventListener('DOMContentLoaded', () => {
     setThemeByTime();
     setInterval(setThemeByTime, 60 * 60 * 1000); // update every hour
 });
-
-// Console welcome message
-console.log(`
-██████╗  ██████╗ ██████╗ ████████╗███████╗ ██████╗ ██╗     ██╗ ██████╗ 
-██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝██╔════╝██╔═══██╗██║     ██║██╔═══██╗
-██████╔╝██║   ██║██████╔╝   ██║   █████╗  ██║   ██║██║     ██║██║   ██║
-██╔═══╝ ██║   ██║██╔══██╗   ██║   ██╔══╝  ██║   ██║██║     ██║██║   ██║
-██║     ╚██████╔╝██║  ██║   ██║   ██║     ╚██████╔╝███████╗██║╚██████╔╝
-╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝      ╚═════╝ ╚══════╝╚═╝ ╚═════╝ 
-
-Welcome to Ramokhele Manyeli's Portfolio
-System Status: ONLINE
-Version: 2.1.0
-`);

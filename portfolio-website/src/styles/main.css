@@ -90,6 +90,8 @@ body.dark-theme .contact-method svg {
 body.dark-theme .stat-number,
 body.dark-theme .metric-value,
 body.dark-theme .stat-label,
+body.dark-theme .stat-value,
+body.dark-theme .header-text,
 body.dark-theme .metric-label,
 body.dark-theme .card-title,
 body.dark-theme .section-title,
@@ -644,6 +646,21 @@ a, .tab-btn.active, .stat-icon, .project-status.deployed, .status-indicator {
     background: rgba(156, 163, 175, 0.1);
 }
 
+.project-card .project-id {
+    color: var(--accent) !important;
+}
+
+.project-card .action-btn {
+    color: var(--accent) !important;
+    border-color: var(--accent) !important;
+    background: #18181b !important;
+}
+
+.project-card .action-btn:hover {
+    background: #22c55e !important;
+    color: #18181b !important;
+}
+
 .project-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -1083,5 +1100,23 @@ body.dark-theme .profile-summary,
 body.dark-theme .profile-summary > div,
 body.dark-theme .profile-summary > p,
 body.dark-theme .system-profile-title {
+    color: #fff !important;
+}
+
+body.dark-theme .metrics-card .profile-content,
+body.dark-theme .metrics-card .profile-content > div {
+    color: #fff !important;
+}
+
+body.dark-theme .contact-method,
+body.dark-theme .contact-method .method-title,
+body.dark-theme .contact-method .method-value {
+    color: #fff !important;
+}
+
+body.dark-theme .availability-status,
+body.dark-theme .availability-status .status-title,
+body.dark-theme .availability-status .status-item,
+body.dark-theme .availability-status .status-item span {
     color: #fff !important;
 }
