@@ -1073,11 +1073,60 @@ body.dark-theme .terminal-header svg {
     fill: #fff !important;
 }
 
+/* Theme toggle button */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.theme-toggle-btn {
+    background: none;
+    border: 1px solid #d1d5db;
+    color: #111827;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    width: 36px;
+    height: 36px;
+}
+
+.theme-toggle-btn:hover {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: #9ca3af;
+}
+
+body.dark-theme .theme-toggle-btn {
+    border-color: #374151;
+    color: #fff;
+}
+
+body.dark-theme .theme-toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #6b7280;
+}
+
+.theme-icon {
+    transition: opacity 0.3s ease;
+}
+
+body.dark-theme .sun-icon {
+    display: none;
+}
+
+body.dark-theme .moon-icon {
+    display: block !important;
+}
+
 /* Command line and user info text */
 .command-line,
 .user-info,
 .user-info div {
-    color: #fff !important;
+    color: #111827 !important;
 }
 
 body.dark-theme .command-line,
@@ -1086,16 +1135,14 @@ body.dark-theme .user-info div {
     color: #fff !important;
 }
 
-/* "About" summary text (quotes) */
+/* "About" summary text */
 .profile-summary,
 .profile-summary > div,
 .profile-summary > p {
-    color: #fff !important;
+    color: #374151 !important;
 }
 
-/* Light theme: default colors (no change needed) */
-
-/* Dark theme: force white for SYSTEM_PROFILE.exe and summary lines */
+/* Dark theme: force white for text elements */
 body.dark-theme .profile-summary,
 body.dark-theme .profile-summary > div,
 body.dark-theme .profile-summary > p,
@@ -1108,13 +1155,33 @@ body.dark-theme .metrics-card .profile-content > div {
     color: #fff !important;
 }
 
-body.dark-theme .contact-method,
+/* Light theme: proper dark text for visibility */
+.contact-method .method-title {
+    color: #111827 !important;
+}
+
+.contact-method .method-value {
+    color: #6b7280 !important;
+}
+
+.availability-status .status-title {
+    color: #111827 !important;
+}
+
+.availability-status .status-item {
+    color: #374151 !important;
+}
+
+.availability-status .status-item span {
+    color: #111827 !important;
+}
+
+/* Dark theme overrides */
 body.dark-theme .contact-method .method-title,
 body.dark-theme .contact-method .method-value {
     color: #fff !important;
 }
 
-body.dark-theme .availability-status,
 body.dark-theme .availability-status .status-title,
 body.dark-theme .availability-status .status-item,
 body.dark-theme .availability-status .status-item span {

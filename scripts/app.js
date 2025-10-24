@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function initializePortfolio() {
+    initializeTheme();
     startTypingAnimation();
     startClock();
     animateStats();
@@ -311,16 +312,73 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Theme switching based on time
-function setThemeByTime() {
-    const hour = new Date().getHours();
-    const isDark = (hour >= 18 || hour < 6);
-    document.body.classList.toggle('dark-theme', isDark);
-    document.body.classList.toggle('light-theme', !isDark);
+// Theme management
+let userThemePreference = null;
+
+function initializeTheme() {
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme-preference');
+    
+    if (savedTheme) {
+        userThemePreference = savedTheme;
+        setTheme(savedTheme === 'dark');
+    } else {
+        // Default to time-based theme if no preference is saved
+        setThemeByTime();
+    }
+    
+    // Set up theme toggle button
+    setupThemeToggle();
 }
 
-// Run on load and every hour
+function setTheme(isDark) {
+    document.body.classList.toggle('dark-theme', isDark);
+    document.body.classList.toggle('light-theme', !isDark);
+    
+    // Update theme toggle icons
+    const sunIcon = document.querySelector('.sun-icon');
+    const moonIcon = document.querySelector('.moon-icon');
+    
+    if (sunIcon && moonIcon) {
+        if (isDark) {
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'block';
+        } else {
+            sunIcon.style.display = 'block';
+            moonIcon.style.display = 'none';
+        }
+    }
+}
+
+function setThemeByTime() {
+    // Only set theme by time if user hasn't set a preference
+    if (userThemePreference === null) {
+        const hour = new Date().getHours();
+        const isDark = (hour >= 18 || hour < 6);
+        setTheme(isDark);
+    }
+}
+
+function setupThemeToggle() {
+    const themeToggle = document.getElementById('theme-toggle');
+    
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const isDarkTheme = document.body.classList.contains('dark-theme');
+            const newTheme = !isDarkTheme;
+            
+            // Set user preference
+            userThemePreference = newTheme ? 'dark' : 'light';
+            localStorage.setItem('theme-preference', userThemePreference);
+            
+            // Apply theme
+            setTheme(newTheme);
+        });
+    }
+}
+
+// Run on load and every hour (only affects auto-switching if no user preference)
 document.addEventListener('DOMContentLoaded', () => {
-    setThemeByTime();
+    initializeTheme();
     setInterval(setThemeByTime, 60 * 60 * 1000); // update every hour
 });
