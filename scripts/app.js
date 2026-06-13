@@ -50,9 +50,9 @@ function startClock() {
 // Animated counters
 function animateStats() {
     const targets = {
-        'lines-of-code': 6000,
-        'projects-completed': 4,
-        'coffee-consumed': 80,
+        'lines-of-code': 15000,
+        'projects-completed': 7,
+        'coffee-consumed': 103,
         'hours-coding': 1000
     };
 

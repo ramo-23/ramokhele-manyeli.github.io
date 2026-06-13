@@ -94,7 +94,7 @@
                             <circle cx="12" cy="12" r="6"></circle>
                             <circle cx="12" cy="12" r="2"></circle>
                         </svg>
-                        <div class="stat-number" id="projects-completed">3</div>
+                        <div class="stat-number" id="projects-completed">7</div>
                         <div class="stat-label">PROJECTS_DEPLOYED</div>
                     </div>
                     <div class="stat-card">
@@ -133,16 +133,13 @@
                                 Education & Achievements
                             </div>
                             <div class="profile-content">
-                                    <div><strong>BCom Informatics (Information Systems)</strong> (2023 - 2025)</div>
-                                    <div>University of Pretoria, Pretoria, South Africa</div>
-                                    <div>Majors: Statistics & Data Science, Informatics</div>
-                                    <div>Current GPA: 70% Average</div>
-                                    <div>Golden Key Honor Society - Top 15% of faculty</div>
-                                    <div style="height:8px"></div>
-                                    <div><strong>Current:</strong> Bachelor of Commerce Honours | Postgraduate</div>
-                                    <div>University of Pretoria, Pretoria, South Africa</div>
-                                    <div>Majors: Informatics</div>
-                                </div>
+                                <div><strong>BCom Honours in Informatics</strong> (2025 - Present)</div>
+                                <div>University of Pretoria, Pretoria, South Africa</div>
+                                <div style="height:8px"></div>
+                                <div><strong>BCom Informatics (Information Systems)</strong> (2022 - 2024)</div>
+                                <div>University of Pretoria, Pretoria, South Africa</div>
+                                <div>Majors: Statistics &amp; Data Science, Informatics</div>
+                            </div>
                         </div>
                     </div>
 
@@ -158,9 +155,6 @@
                             <div class="username">RAMOKHELE_MANYELI.dev</div>
                         </div>
                     </div>
-
-                    
-
                 </div>
             </div>
 
@@ -175,68 +169,187 @@
                     PROJECT_DATABASE.sql
                 </h2>
                 <div class="projects-container">
+
+                    <!-- #001 -->
                     <div class="project-card">
                         <div class="project-header">
                             <div class="project-info">
                                 <span class="project-id">#001</span>
-                                <span class="project-name">End-to-End Career Development Platform</span>
-                                <span class="project-status deployed">DEVELOPMENT</span>
+                                <span class="project-name">Music Analytics Platform</span>
+                                <span class="project-status deployed">DEPLOYED</span>
                             </div>
-                            <div class="project-actions"></div> <!-- Empty but present for alignment -->
+                            <div class="project-actions">
+                                <button class="action-btn" onclick="window.open('https://github.com/ramo-23/MusicAnalyticsPlatform', '_blank')">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    CODE
+                                </button>
+                                <button class="action-btn" onclick="window.open('https://music-analytics-platform-rose.vercel.app/', '_blank')">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                    LIVE
+                                </button>
+                            </div>
                         </div>
                         <div class="project-stats">
                             <div class="project-stat">
-                                <span class="stat-label">ROLE</span>
-                                <span class="stat-value">Team Leader</span>
-                            </div>
-                            <div class="project-stat">
                                 <span class="stat-label">STACK</span>
                                 <span class="stat-value">
-                                    <span class="tech-tag">Angular</span>
-                                    <span class="tech-tag">Ionic</span>
-                                    <span class="tech-tag">.NET Web API</span>
-                                    <span class="tech-tag">Azure</span>
-                                    <span class="tech-tag">CI/CD</span>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">DuckDB</span>
+                                    <span class="tech-tag">C# .NET 10</span>
+                                    <span class="tech-tag">ASP.NET Core</span>
+                                    <span class="tech-tag">Dapper</span>
+                                    <span class="tech-tag">Angular 18</span>
+                                    <span class="tech-tag">Vercel</span>
+                                    <span class="tech-tag">Render</span>
                                 </span>
                             </div>
                         </div>
                         <div class="profile-content">
-                            Leading development team in building a comprehensive career and development platform. Implementing CI/CD pipelines, developing frontend with Angular/Ionic, backend .NET Web APIs, managing version control with GitHub, and deploying on Microsoft Azure.
+                            An end-to-end analytics platform ingesting crowdsourced music data from the Last.fm REST API via a Python ETL pipeline, normalising raw JSON into a DuckDB star schema (Fact_Metrics, Dim_Track, Dim_Artist). Exposes a read-only C# ASP.NET Core REST API via Dapper, and serves a reactive Angular 18 signal-driven dashboard with client-side computed pagination. Backend deployed on Render; frontend live on Vercel.
                         </div>
                     </div>
 
+                    <!-- #002 -->
                     <div class="project-card">
                         <div class="project-header">
                             <div class="project-info">
                                 <span class="project-id">#002</span>
-                                <span class="project-name">Database Management System</span>
-                                <span class="project-status development">DEVELOPMENT</span>
+                                <span class="project-name">Log Analytics Pipeline</span>
+                                <span class="project-status deployed">DEPLOYED</span>
                             </div>
-                            <div class="project-actions"></div> <!-- Empty but present for alignment -->
+                            <div class="project-actions">
+                                <button class="action-btn" onclick="window.open('https://github.com/ramokhele-manyeli/log-analytics-project', '_blank')">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    CODE
+                                </button>
+                            </div>
                         </div>
                         <div class="project-stats">
                             <div class="project-stat">
-                                <span class="stat-label">ROLE</span>
-                                <span class="stat-value">Developer</span>
-                            </div>
-                            <div class="project-stat">
                                 <span class="stat-label">STACK</span>
                                 <span class="stat-value">
-                                    <span class="tech-tag">VBA</span>
-                                    <span class="tech-tag">SQL</span>
-                                    <span class="tech-tag">Remote Desktop</span>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">DuckDB</span>
+                                    <span class="tech-tag">Streamlit</span>
                                 </span>
                             </div>
                         </div>
                         <div class="profile-content">
-                            Built a small-scale database management system for Khanya Dental Clinic using VBA. Transitioned paperback file management to digital, currently rebuilding for online and remote access, improving accessibility and user experience for clinic staff.
+                            Engineered an API log analytics pipeline using DuckDB for high-performance in-process SQL querying across large structured log datasets. Built automated incident detection logic to flag anomalies in API behaviour, translating raw log streams into actionable operational intelligence. Delivered an interactive Streamlit dashboard enabling stakeholders to explore ingestion metrics, error rates, and performance trends without writing SQL.
                         </div>
                     </div>
 
+                    <!-- #003 -->
                     <div class="project-card">
                         <div class="project-header">
                             <div class="project-info">
                                 <span class="project-id">#003</span>
+                                <span class="project-name">Job Market Analytics Platform</span>
+                                <span class="project-status deployed">DEPLOYED</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="action-btn" onclick="window.open('https://github.com/ramo-23/Job-Market-Analytics', '_blank')">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    CODE
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <span class="stat-label">STACK</span>
+                                <span class="stat-value">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">SQL Server</span>
+                                    <span class="tech-tag">Angular</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="profile-content">
+                            Engineered an end-to-end analytics pipeline extracting, cleaning, and consolidating unstructured web-scraped job listings data. Transformed raw disparate data into structured relational tables in SQL Server using performant stored procedures, then connected the warehouse layer to a custom Angular dashboard providing visual analytics on job market trends and demand.
+                        </div>
+                    </div>
+
+                    <!-- #004 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-info">
+                                <span class="project-id">#004</span>
+                                <span class="project-name">Regression-Scholar</span>
+                                <span class="project-status deployed">DEPLOYED</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="action-btn" onclick="window.open('https://github.com/ramo-23/regression-scholar', '_blank')">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    CODE
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <span class="stat-label">STACK</span>
+                                <span class="stat-value">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">FastAPI</span>
+                                    <span class="tech-tag">Gemini Pro API</span>
+                                    <span class="tech-tag">Vector Database</span>
+                                    <span class="tech-tag">RAG</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="profile-content">
+                            A specialised Retrieval-Augmented Generation (RAG) system built to ingest and query complex academic research papers on advanced statistical techniques. Built the data parsing and chunking layer, converting academic PDF structures into clean textual vectors to prevent AI hallucinations, and exposed data access patterns via a performant FastAPI endpoint to deliver grounded, context-aware answers.
+                        </div>
+                    </div>
+
+                    <!-- #005 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-info">
+                                <span class="project-id">#005</span>
+                                <span class="project-name">Retail Price Optimisation</span>
+                                <span class="project-status research">RESEARCH</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="action-btn" onclick="window.open('https://github.com/ramokhele-manyeli/retail-price-optimization', '_blank')">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    CODE
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <span class="stat-label">STACK</span>
+                                <span class="stat-value">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">scikit-learn</span>
+                                    <span class="tech-tag">Jupyter</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="profile-content">
+                            Conducted exploratory data analysis on 20,000+ retail transactions to quantify price elasticity, predict demand, and identify revenue-maximising pricing strategies. Applied ML regression models to surface data-driven pricing recommendations, demonstrating the ability to translate large datasets into actionable business insight.
+                        </div>
+                    </div>
+
+                    <!-- #006 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-info">
+                                <span class="project-id">#006</span>
                                 <span class="project-name">AI-Powered Local News Trends Dashboard</span>
                                 <span class="project-status deployed">DEPLOYED</span>
                             </div>
@@ -264,42 +377,44 @@
                             </div>
                         </div>
                         <div class="profile-content">
-                            Created this for the purpose of users discovering the pulse of the world’s cities in real time. This dashboard uses NLP, clustering, and interactive visualization to reveal trending news in any city. Features include real-time news fetching, keyword extraction, sentiment analysis, topic clustering, and interactive charts. Built for journalists, researchers, and the curious—see how news and sentiment flow across the globe, city by city.
+                            A dashboard for discovering the pulse of the world's cities in real time. Uses NLP, clustering, and interactive visualization to reveal trending news in any city — featuring real-time news fetching, keyword extraction, sentiment analysis, topic clustering, and interactive charts. Built for journalists, researchers, and the curious.
                         </div>
                     </div>
-                    
-                        <div class="project-card">
-                            <div class="project-header">
-                                <div class="project-info">
-                                    <span class="project-id">#004</span>
-                                    <span class="project-name">Expected Goals (xG) Model – Football Analytics | 2025</span>
-                                    <span class="project-status research">RESEARCH</span>
-                                </div>
-                                <div class="project-actions">
-                                    <button class="action-btn" onclick="window.open('https://github.com/ramo-23/xg-prediction-model', '_blank')">
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                        </svg>
-                                        CODE
-                                    </button>
-                                </div>
+
+                    <!-- #007 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-info">
+                                <span class="project-id">#007</span>
+                                <span class="project-name">Expected Goals (xG) Model – Football Analytics</span>
+                                <span class="project-status research">RESEARCH</span>
                             </div>
-                            <div class="project-stats">
-                                <div class="project-stat">
-                                    <span class="stat-label">STACK</span>
-                                    <span class="stat-value">
-                                        <span class="tech-tag">Python</span>
-                                        <span class="tech-tag">scikit-learn</span>
-                                        <span class="tech-tag">pandas</span>
-                                        <span class="tech-tag">Jupyter</span>
-                                        <span class="tech-tag">Plotly</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="profile-content">
-                                Built an interpretable ML xG model with automated data processing, feature engineering, and calibrated probability outputs. Designed reproducible analytics workflow (EDA → model training → interpretation → visualization) with scripts + Jupyter notebooks. Evaluated feature impact and conducted class imbalance experiments to improve scoring probability estimation accuracy
+                            <div class="project-actions">
+                                <button class="action-btn" onclick="window.open('https://github.com/ramo-23/xg-prediction-model', '_blank')">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                    </svg>
+                                    CODE
+                                </button>
                             </div>
                         </div>
+                        <div class="project-stats">
+                            <div class="project-stat">
+                                <span class="stat-label">STACK</span>
+                                <span class="stat-value">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">scikit-learn</span>
+                                    <span class="tech-tag">pandas</span>
+                                    <span class="tech-tag">Jupyter</span>
+                                    <span class="tech-tag">Plotly</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="profile-content">
+                            Built an interpretable ML xG model with automated data processing, feature engineering, and calibrated probability outputs. Designed a reproducible analytics workflow (EDA → model training → interpretation → visualization) with scripts + Jupyter notebooks. Evaluated feature impact and conducted class imbalance experiments to improve scoring probability estimation accuracy.
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -356,7 +471,7 @@
                             <span class="skill-percentage">Beginner</span>
                         </div>
                         <div class="skill-bar"><div class="skill-progress" style="width: 45%"></div></div>
-                        <div class="skill-level">Azure, CI/CD, GitHub</div>
+                        <div class="skill-level">Azure, CI/CD, GitHub, Vercel, Render</div>
                     </div>
 
                     <div class="skill-card">
@@ -365,7 +480,7 @@
                             <span class="skill-percentage">Proficient</span>
                         </div>
                         <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
-                        <div class="skill-level">PowerBI, Jira, Confluence, VBA</div>
+                        <div class="skill-level">PowerBI, Jira, Confluence, VBA, DuckDB</div>
                     </div>
                 </div>
             </div>
